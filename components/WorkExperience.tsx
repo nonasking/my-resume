@@ -1,7 +1,11 @@
-import { workExperiences } from '@/data/resume'
+'use client'
+
+import { useResumeData } from '@/hooks/useResumeData'
 import { SectionLabel } from '@/components/Introduction'
 
 export default function WorkExperience() {
+  const { workExperiences } = useResumeData()
+
   return (
     <section id="experience" className="max-w-3xl mx-auto px-6 py-12">
       <SectionLabel>Work Experience</SectionLabel>

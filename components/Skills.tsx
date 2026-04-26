@@ -1,7 +1,11 @@
-import { skills } from '@/data/resume'
+'use client'
+
+import { useResumeData } from '@/hooks/useResumeData'
 import { SectionLabel } from '@/components/Introduction'
 
 export default function Skills() {
+  const { skills } = useResumeData()
+
   return (
     <section id="skills" className="max-w-3xl mx-auto px-6 py-12">
       <SectionLabel>Skill</SectionLabel>

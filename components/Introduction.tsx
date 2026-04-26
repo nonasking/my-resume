@@ -1,6 +1,9 @@
-import { introduction } from '@/data/resume'
+'use client'
+
+import { useResumeData } from '@/hooks/useResumeData'
 
 export default function Introduction() {
+  const { introduction } = useResumeData()
   const paragraphs = introduction.split('\n\n')
 
   return (
