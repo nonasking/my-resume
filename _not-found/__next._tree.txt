@@ -1,2 +1,2 @@
-:HL["/my-resume/_next/static/chunks/11kl.sxcxuc14.css","style"]
-0:{"tree":{"name":"","param":null,"prefetchHints":16,"slots":{"children":{"name":"/_not-found","param":null,"prefetchHints":0,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}}}},"staleTime":300,"buildId":"khAu95ut_Yj16NAej34Jq"}
+:HL["/my-resume/_next/static/chunks/0_9i-e32t-es9.css","style"]
+0:{"tree":{"name":"","param":null,"prefetchHints":16,"slots":{"children":{"name":"/_not-found","param":null,"prefetchHints":0,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}}}},"staleTime":300,"buildId":"C3fwIyAr6zOoxZBBK8LX9"}
