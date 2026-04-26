@@ -1,8 +1,12 @@
-import { educations } from '@/data/resume'
+'use client'
+
+import { useResumeData } from '@/hooks/useResumeData'
 import { SectionLabel } from '@/components/Introduction'
 import { Tag } from '@/components/Skills'
 
 export default function Education() {
+  const { educations } = useResumeData()
+
   return (
     <section id="education" className="max-w-3xl mx-auto px-6 py-12">
       <SectionLabel>Education</SectionLabel>

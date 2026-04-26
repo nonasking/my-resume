@@ -1,8 +1,12 @@
-import { projects } from '@/data/resume'
+'use client'
+
+import { useResumeData } from '@/hooks/useResumeData'
 import { SectionLabel } from '@/components/Introduction'
 import { Tag } from '@/components/Skills'
 
 export default function Projects() {
+  const { projects } = useResumeData()
+
   return (
     <section id="projects" className="max-w-3xl mx-auto px-6 py-12">
       <SectionLabel>Project</SectionLabel>

@@ -1,10 +1,21 @@
-import { profile } from '@/data/resume'
+'use client'
+
+import { useLanguage } from '@/contexts/LanguageContext'
+import { useResumeData } from '@/hooks/useResumeData'
 
 export default function Header() {
+  const { lang } = useLanguage()
+  const { profile } = useResumeData()
+
+  const headline =
+    lang === 'ko'
+      ? `${profile.title} ${profile.name}입니다.`
+      : `I'm ${profile.name}, ${profile.title}.`
+
   return (
     <header className="max-w-3xl mx-auto px-6 pt-16 pb-12 md:pt-24 md:pb-16">
-      <h1 className="text-[clamp(0.875rem,3.5vw,2rem)] font-bold text-slate-900 tracking-tight leading-snug mb-8 whitespace-nowrap">
-        {profile.title} {profile.name}입니다.
+      <h1 className="text-[clamp(0.875rem,3.5vw,2rem)] font-bold text-slate-900 tracking-tight leading-snug mb-8">
+        {headline}
       </h1>
       <div className="flex flex-wrap gap-3">
         <a
