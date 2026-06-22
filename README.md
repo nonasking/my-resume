@@ -1,56 +1,56 @@
-# 강민성 — 개인 이력서 포트폴리오
+# Minsung Kang — Personal Resume Portfolio
 
 **[https://nonasking.github.io/my-resume](https://nonasking.github.io/my-resume)**
 
-Next.js 16 (App Router) + Tailwind CSS v4로 제작한 정적 개인 이력서 웹사이트입니다.
+A static personal resume website built with Next.js 16 (App Router) + Tailwind CSS v4.
 
-## 기술 스택
+## Tech stack
 
 - **Framework**: Next.js 16 (App Router, `output: 'export'`)
 - **Styling**: Tailwind CSS v4
 - **Language**: TypeScript
 - **Deploy**: GitHub Pages (`gh-pages`)
 
-## 프로젝트 구조
+## Project structure
 
 ```
 ├── app/
-│   ├── layout.tsx       # 메타데이터, 폰트
-│   ├── page.tsx         # 섹션 조립
+│   ├── layout.tsx       # metadata, fonts
+│   ├── page.tsx         # section assembly
 │   └── globals.css
 ├── components/
-│   ├── Nav.tsx          # 스티키 네비게이션
-│   ├── Header.tsx       # 히어로 헤더
+│   ├── Nav.tsx          # sticky navigation
+│   ├── Header.tsx       # hero header
 │   ├── Introduction.tsx
 │   ├── Skills.tsx
 │   ├── WorkExperience.tsx
 │   ├── Projects.tsx
 │   └── Education.tsx
 └── data/
-    └── resume.ts        # 이력서 데이터 (수정 시 여기만 편집)
+    └── resume.ts        # resume data (edit only here)
 ```
 
-## 로컬 개발
+## Local development
 
 ```bash
 npm install
 npm run dev
 ```
 
-개발 서버: [http://localhost:3000/my-resume](http://localhost:3000/my-resume)
+Dev server: [http://localhost:3000/my-resume](http://localhost:3000/my-resume)
 
-> `basePath: '/my-resume'` 설정으로 인해 루트(`/`)가 아닌 `/my-resume` 경로로 접근합니다.
+> Because of the `basePath: '/my-resume'` setting, it's served at `/my-resume` rather than the root (`/`).
 
-## 배포
+## Deploy
 
 ```bash
 npm run deploy
 ```
 
-`next build` → `gh-pages` 브랜치 푸시까지 자동으로 처리됩니다.
+Handles `next build` → push to the `gh-pages` branch automatically.
 
-첫 배포 후 GitHub 레포 **Settings → Pages** 에서 Branch를 `gh-pages`로 설정해야 합니다.
+After the first deploy, set the Branch to `gh-pages` under the GitHub repo's **Settings → Pages**.
 
-## 이력서 내용 수정
+## Editing resume content
 
-`data/resume.ts` 파일만 수정하면 됩니다. 컴포넌트를 건드릴 필요가 없습니다.
+Just edit `data/resume.ts` — no need to touch the components.
